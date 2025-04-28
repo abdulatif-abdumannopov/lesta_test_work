@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Verdana", sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    gap: 20px;
+}
+.title{
+    font-size: 32px;
+}
+
+.sub_button{
+    padding: 5px 40px;
+    border: 1px solid #810000;
+    cursor: pointer;
+    background-color: transparent;
+    color: #810000;
+    transition: 0.3s;
+    font-size: 16px;
+}
+.sub_button:hover{
+    background-color: #810000;
+    color: white;
+}
