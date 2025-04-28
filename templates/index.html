@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <form class="container" method="post" enctype="multipart/form-data">
+        {% if message %}
+        	{{ message }}
+        {% endif %}
+        <div class="title">
+            Download document
+        </div>
+        {% csrf_token %}
+        {{ documentForm.document }}
+        <button type="submit" class="sub_button">Send</button>
+    </form>
+</body>
+</html>
